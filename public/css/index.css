@@ -5,6 +5,8 @@
   --white-cl: #ddd;
   --light-cl: #b36978;
   --lighter-cl: #ad8089;
+  /* --lighter-cl: #e9d6da; */
+  
   --text-cl: #777;
 }
 
@@ -114,17 +116,19 @@ nav ul li {
   margin: 50px 20px;
 }
 
- li a {
+a.link {
   text-decoration: none;
   color: var(--white-cl);
 }
+
+
 
 .toggle {
   position: fixed;
   color: var(--white-cl) !important;
   z-index: 2;
-  right: 95px;
-  top: 47px;
+  right: 75px;
+  top: 50px;
   font-size: large !important;
   cursor: pointer;
   font-size: large;
@@ -169,9 +173,81 @@ nav ul li {
   font-size: 30px;
   margin: 20px 0 ;
 }
-/*  */
 
 
+/* contact */
+
+.contact {
+  margin-top: -5px;
+}
+
+.contact-row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact-left, .contact-right {
+  flex-basis: 50%;
+}
+
+.contact-right img {
+  width: 50%;
+  margin-left: 120px;
+  transition: .5s;
+}
+
+/* contact form */
+form {
+  margin: 0 auto;
+}
+
+form h1 {
+  margin-left: 200px;
+  color: var(--base-cl);
+  width: 100%;
+  font-size: 30px;
+  
+
+}
+form .input {
+  display: block;
+  margin: 0 10px 10px 120px ;
+  width: 50%;
+  padding: 5px;
+  border: 1px solid var(--text-cl);
+  border-radius: 3px;
+  color: var(--text-cl);
+  caret-color: var(--text-cl);
+}
+
+form .btn-submit {
+  margin: 0 10px 10px 120px ;
+  width: 50%;
+  border: 3px;
+  padding: 5px;
+  background: var(--light-cl);
+  color: var(--white-cl);
+  opacity: 0.7;
+  border-radius: 3px;
+  transition: .3s
+
+}
+
+form .btn-submit:hover {
+  opacity: 0.8;
+  transition: .3s;
+}
+
+
+
+
+
+
+
+
+
+/*  Media query */
 @media only screen and (max-width: 770px) { 
   .header {
     background-image: none;
@@ -215,8 +291,5 @@ nav ul li {
   .about-text p {
     text-align: center;
   }
-
-
-
   
 }

@@ -1,8 +1,5 @@
 import MenuOpenRoundedIcon from '@material-ui/icons/MenuOpenRounded';
 
-
-
-
 const Hamburger = ({toggleNav}) => {
   return (
     <div >

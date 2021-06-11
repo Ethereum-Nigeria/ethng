@@ -1,10 +1,22 @@
-import React from 'react'
+import Form from '../components/form'
+import contact from './contact.png'
 
 const Contact = () => {
   return (
-    <div>
-      This is the contact
-    </div>
+    <>
+      <section className='contact'>
+        <div className='contact-row'>
+          
+          <div className='contact-left'>
+            <Form className='form' />
+          </div>
+
+          <div className='contact-right'>
+            <img  src={contact} alt='contact' />
+          </div>
+        </div>
+      </section>
+    </>
   )
 }
 

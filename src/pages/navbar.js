@@ -2,7 +2,7 @@ import { useContext } from 'react'
 import { NavLink } from 'react-router-dom'
 import { ToggleContext } from '../contexts/toggle'
 
-import Hamburger from './hamburger'
+import Hamburger from '../components/hamburger'
 
 
 const Navbar = () => {
@@ -14,9 +14,9 @@ const Navbar = () => {
       <nav className={isNavToggle ? 'show-bar' : 'hide-bar'}> 
         <ul className='navlinks'> 
           
-          <li><NavLink to='/'>Home</NavLink> </li>
-          <li><NavLink to='/about'>About</NavLink> </li>
-          <li><NavLink to='/contact'>Contact</NavLink> </li>
+          <li><NavLink to='/' className='link' >Home</NavLink> </li>
+          <li><NavLink to='/about' className='link' >About</NavLink> </li>
+          <li><NavLink to='/contact' className='link' >Contact</NavLink> </li>
         </ul>
       </nav>
       <Hamburger toggleNav={toggleNav} />
